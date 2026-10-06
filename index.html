@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Share Your Experience</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Sora:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="page">
+
+        <!-- Header -->
+        <header class="header">
+            <div class="brand">
+                <span class="brand-mark">✦</span>
+                <span>Burgur hub</span>
+                <span class="brand-mark">✦</span>
+            </div>
+        </header>
+
+
+        <!-- Main -->
+        <main>
+
+            <div class="intro-section">
+
+                <p class="eyebrow">A MOMENT TO SHARE...</p>
+
+                <h1>
+                    How was your<br>
+                    experience?
+                </h1>
+
+                <p class="intro-text">
+                    A quick thought from you can make the next visit even better.
+                </p>
+
+            </div>
+
+
+            <!-- Rating -->
+            <section class="rating-card">
+
+                <p class="rating-title">
+                    Rate your experience
+                </p>
+
+                <div class="stars" id="stars">
+
+                    <button type="button" data-rating="1" aria-label="1 star">
+                        ★
+                    </button>
+
+                    <button type="button" data-rating="2" aria-label="2 stars">
+                        ★
+                    </button>
+
+                    <button type="button" data-rating="3" aria-label="3 stars">
+                        ★
+                    </button>
+
+                    <button type="button" data-rating="4" aria-label="4 stars">
+                        ★
+                    </button>
+
+                    <button type="button" data-rating="5" aria-label="5 stars">
+                        ★
+                    </button>
+
+                </div>
+
+                <p id="ratingText">
+                    Tap a star to rate
+                </p>
+
+            </section>
+
+
+            <!-- Feedback Form -->
+            <form id="feedbackForm">
+
+                <div class="field">
+
+                    <label for="name">
+                        Your name
+                        <span>Optional</span>
+                    </label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        placeholder="Enter your name"
+                        autocomplete="name"
+                    >
+
+                </div>
+
+
+                <div class="field">
+
+                    <label for="feedback">
+                        Your feedback
+                        <span>Optional</span>
+                    </label>
+
+                    <textarea
+                        id="feedback"
+                        placeholder="Tell us about your experience..."
+                    ></textarea>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    id="submitBtn"
+                    class="submit-btn"
+                >
+                    Submit Feedback
+                </button>
+
+            </form>
+
+
+            <!-- Success -->
+            <section
+                class="success-box"
+                id="successBox"
+            >
+
+                <div class="success-icon">
+                    ✓
+                </div>
+
+                <h2>
+                    Thank you.
+                </h2>
+
+                <p>
+                    We really appreciate you taking a moment to share your experience.
+                </p>
+
+                <a
+                    href="#"
+                    id="googleReviewBtn"
+                    class="google-btn"
+                    target="_blank"
+                    rel="noopener"
+                >
+                    ⭐ Leave a Google Review
+                </a>
+
+                <a
+                href="#"
+                id="instagramBtn"
+                class="google-btn"
+                target="_blank"
+                rel="noopener" 
+                style="margin-top:10px;background:#405DE6;"
+                >
+                📸 Follow us on Instagram
+            </a>
+
+            </section>
+
+        </main>
+
+
+        <!-- Footer -->
+        <footer>
+            <span>Thank you for choosing us.</span>
+        </footer>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
